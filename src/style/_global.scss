@@ -1,6 +1,11 @@
 @use "./themes" as themes;
 
 body {
-  background-color: var(--background-color);
-  color: var(--text-color);
+  .light {
+    @include themes.light-theme;
+  }
+
+  .dark {
+    @include themes.dark-theme;
+  }
 }

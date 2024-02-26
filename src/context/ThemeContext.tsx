@@ -1,4 +1,4 @@
-import { FC, ReactNode, createContext, useEffect, useState } from "react";
+import { FC, ReactNode, createContext, useState } from "react";
 
 type ThemeType = "light" | "dark";
 
@@ -17,10 +17,6 @@ export const ThemeContext = createContext<ThemeContextProps | undefined>(
 
 export const ThemeProvider: FC<ThemeProviderProps> = ({ children }) => {
   const [theme, setTheme] = useState<ThemeType>("light");
-
-  useEffect(() => {
-    document.body.setAttribute("data-theme", theme);
-  }, [theme]);
 
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
