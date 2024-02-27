@@ -6,10 +6,10 @@ import Test2 from "../Test2/Test2";
 import { useTheme } from "../../hooks/useTheme";
 
 const App: FC = ({}) => {
-  const { toggleTheme, theme } = useTheme();
+  const { toggleTheme } = useTheme();
 
   return (
-    <div className={theme}>
+    <div>
       <button onClick={toggleTheme}>Toggle theme</button>
       <Test1 />
       <Test2 />

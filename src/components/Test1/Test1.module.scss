@@ -1,4 +1,11 @@
+@use "../../style/themes" as themes;
+
 .test-1 {
-  background-color: var(--background-color);
-  color: var(--text-color);
+  &.light {
+    @include themes.light-theme;
+  }
+
+  &.dark {
+    @include themes.dark-theme;
+  }
 }
