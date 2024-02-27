@@ -1,11 +1,18 @@
+// @use "./themes" as themes;
+
+// body {
+//   .light {
+//     @include themes.light-theme;
+//   }
+
+//   .dark {
+//     @include themes.dark-theme;
+//   }
+// }
+
 @use "./themes" as themes;
 
-body {
-  .light {
-    @include themes.light-theme;
-  }
-
-  .dark {
-    @include themes.dark-theme;
-  }
-}
+// body {
+//   background-color: var(--background-color);
+//   color: var(--text-color);
+// }

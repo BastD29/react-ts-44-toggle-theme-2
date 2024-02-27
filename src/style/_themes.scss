@@ -1,11 +1,11 @@
 @use "./variables" as variables;
 
-@mixin light-theme {
-  background-color: map-get(variables.$colors, "white");
-  color: map-get(variables.$colors, "black");
+.light {
+  --background-color: #{map-get(variables.$colors, "white")};
+  --text-color: #{map-get(variables.$colors, "black")};
 }
 
-@mixin dark-theme {
-  background-color: map-get(variables.$colors, "black");
-  color: map-get(variables.$colors, "white");
+.dark {
+  --background-color: #{map-get(variables.$colors, "black")};
+  --text-color: #{map-get(variables.$colors, "white")};
 }
